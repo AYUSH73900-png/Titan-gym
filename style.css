@@ -8,7 +8,7 @@ background-position:center;
 background-repeat:no-repeat;
     color:white;
     font-family:Arial, sans-serif;
-    margin:02;
+    margin:0;
     padding:0;
 }
 .logo{
@@ -48,6 +48,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
+    flex-wrap: wrap;
 }
 
 nav h2{
@@ -425,4 +426,92 @@ color:white;
 border:none;
 border-radius:8px;
 cursor:pointer;
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    padding:0;
+}
+
+nav ul li{
+    margin:12px 0;
+}
+
+.hero{
+    padding:120px 20px 60px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:350px;
+}
+
+.about-text{
+    max-width:100%;
+}
+
+.timeline::before{
+    left:25px;
+}
+
+.timeline-item{
+    width:100%;
+    left:0 !important;
+    text-align:left !important;
+    padding-left:70px;
+}
+
+.circle{
+    left:15px !important;
+    right:auto;
+}
+
+.timeline-item img{
+    width:100%;
+    height:auto;
+}
+
+.cards,
+.trainer-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card,
+.trainer-card{
+    width:90%;
+}
+
+.popup-content{
+    width:90%;
+}
+
 }
