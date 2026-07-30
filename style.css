@@ -515,3 +515,42 @@ nav ul li{
 }
 
 }
+/* Hamburger Menu */
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#ff5722;
+    cursor:pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav ul{
+        position:absolute;
+        top:80px;
+        right:0;
+        width:220px;
+        background:#111;
+        flex-direction:column;
+        display:none;
+        padding:20px;
+        border-radius:0 0 0 10px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    nav ul li{
+        margin:15px 0;
+    }
+}
