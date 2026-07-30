@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Gym</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+ <nav>
+    <div class="logo">TITAN GYM</div>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav> 
+
+    <section class="hero">
+
+        <h1>TITAN GYM</h1>
+
+        <h2>No pain,No gain.</h2>
+
+        <p>Become the strongest version of yourself.</p>
+
+        <button onclick="location.href='#membership'">
+    Join Now
+</button>
+
+    </section>
+    <section id=about class="about">
+    <div class="about-image">
+        <img src="image/about.jpg" alt="Gym">
+    </div>
+
+    <div class="about-text" data-aos="fade-up">
+        <h2>About Titan Gym</h2>
+
+        <p>
+            At Titan Gym, we help people become stronger, healthier,
+            and more confident. Our trainers and modern equipment
+            ensure the best fitness experience.
+        </p>
+        <button class="journey-btn" onclick="toggleJourney()">
+    🌳 Our Journey
+</button>
+    </div>
+
+</section>
+<section id="journey" class="journey-section">
+
+<h2>🌳 Our Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+    <div class="circle"></div>
+    <img src="image/gym1.jpg" alt="2018">
+    <div class="timeline-content">
+        <h3>2018</h3>
+        <p>Started Titan Gym with a vision to change lives through fitness.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="circle"></div>
+    <img src="image/gym2.jpg" alt="2020">
+    <div class="timeline-content">
+        <h3>2020</h3>
+        <p>Introduced modern equipment and expanded our training area.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="circle"></div>
+    <img src="image/gym3.jpg" alt="2022">
+    <div class="timeline-content">
+        <h3>2022</h3>
+        <p>More than 500 members trusted Titan Gym.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="circle"></div>
+    <img src="image/about.jpg" alt="Today">
+    <div class="timeline-content">
+        <h3>Today</h3>
+        <p>Your transformation could be our next success story.</p>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<p>
+Titan Gym started with one dream—to help people become stronger,
+healthier, and more confident.
+
+Over the years we have added world-class equipment, experienced
+trainers, and created a community of hundreds of happy members.
+
+Your fitness journey could be our next success story.
+</p>
+
+</section>
+<section id=membership class="membership" data-aos="fade-up">
+
+    <h2>Choose Your Membership</h2>
+
+    <div class="cards">
+
+        <div class="card" data-aos="fade-left">
+            <h3>Basic</h3>
+            <h1>₹999</h1>
+            <p>Per Month</p>
+
+            <ul>
+                <li>✔ Gym Access</li>
+                <li>✔ Cardio Area</li>
+                <li>✔ Locker</li>
+            </ul>
+
+            <button onclick="openForm()">Contact Now</button>
+        </div>
+
+        <div class="card popular" data-aos="fade-up">
+            <h3>Pro</h3>
+            <h1>₹1999</h1>
+            <p>Per Month</p>
+
+            <ul>
+                <li>✔ Everything in Basic</li>
+                <li>✔ Personal Trainer</li>
+                <li>✔ Diet Plan</li>
+            </ul>
+
+            <button onclick="openForm()">Contact Now</button>
+        </div>
+
+        <div class="card" data-aos="fade-right">
+            <h3>Elite</h3>
+            <h1>₹2999</h1>
+            <p>Per Month</p>
+
+            <ul>
+                <li>✔ Everything in Pro</li>
+                <li>✔ Steam Bath</li>
+                <li>✔ VIP Lounge</li>
+            </ul>
+
+            <button onclick="openForm()">Contact Now</button>
+        </div>
+
+    </div>
+
+</section>
+<div id="popupForm" class="popup">
+
+<div class="popup-content">
+
+<h2>Join Titan Gym</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="tel" placeholder="Mobile Number">
+
+<select>
+<option>Select Goal</option>
+<option>Lose Weight</option>
+<option>Gain Weight</option>
+<option>Build Muscle</option>
+<option>General Fitness</option>
+</select>
+
+<select>
+<option>Select Plan</option>
+<option>Basic</option>
+<option>Pro</option>
+<option>Elite</option>
+</select>
+
+<button onclick="submitForm()">Submit</button>
+
+<button onclick="closeForm()">Close</button>
+
+</div>
+</div>
+<section class="trainers" id="trainers" data-aos="zoom-in">
+
+<h2>Meet Our Trainers</h2>
+
+<div class="trainer-container">
+
+<div class="trainer-card" data-aos="flip-left">
+<img src="image/trainer1.jpg" alt="">
+<h3>Aditya</h3>
+<p>Strength Coach</p>
+</div>
+
+<div class="trainer-card" data-aos="flip-left">
+<img src="image/trainer2.jpg" alt="">
+<h3>Astha</h3>
+<p>Cardio Expert</p>
+</div>
+
+<div class="trainer-card" data-aos="flip-left">
+<img src="image/trainer3.jpg" alt="">
+<h3>Lavi gaur</h3>
+<p>CrossFit Trainer</p>
+</div>
+
+</div>
+
+</section>
+<section class="contact" id="contact" data-aos="fade-up">
+
+<h2>Contact Us</h2>
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Titan Gym</h3>
+
+<p>📍 Hazratganj, Lucknow</p>
+
+<p>📞 +91 98765 43210</p>
+
+<p>📧 info@titangym.com</p>
+
+<p>🕒 Mon - Sat: 6 AM - 10 PM</p>
+
+</div>
+
+<div class="contact-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+
+</div>
+
+</section>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:false
+});
+</script>
+
+</body>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+
+    <h2>Ready to Transform Your Body?</h2>
+
+    <p class="contact-text">
+        Join Titan Gym today and start your fitness journey.
+    </p>
+
+    <div class="contact-info">
+
+        <div class="info-box" data-aos="fade-up" data-aos-delay="0">
+            <h3>📍 Location</h3>
+            <p>Hazratganj, Lucknow</p>
+        </div>
+
+        <div class="info-box" data-aos="fade-up" data-aos-delay="100">
+            <h3>📞 Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>✉ Email</h3>
+            <p>info@titangym.com</p>
+        </div>
+
+        <div class="info-box" data-aos="fade-up" data-aos-delay="400">
+            <h3>🕒 Working Hours</h3>
+            <p>Mon - Sat : 6 AM - 10 PM</p>
+        </div>
+
+    </div>
+
+    <a href="#" class="trial-btn">🔥 Start Your Free Trial</a>
+
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 400,
+    once: false
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
