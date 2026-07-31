@@ -544,7 +544,7 @@ nav ul li{
         width:220px;
         background:#111;
         flex-direction:column;
-        display:none;
+        display:flex;
         padding:20px;
         border-radius:0 0 0 10px;
     }
