@@ -427,57 +427,18 @@ border:none;
 border-radius:8px;
 cursor:pointer;
 }
-/* ===========================
-   MOBILE HAMBURGER MENU
-=========================== */
-
-.menu-toggle{
-    display:none;
-    font-size:32px;
-    color:white;
-    cursor:pointer;
-}
-
-/* Mobile */
-
-@media (max-width:768px){
-
-nav{
-    padding:20px;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-nav ul{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#111;
-    display:none;
-    flex-direction:column;
-    text-align:center;
-    padding:20px 0;
-}
-
-nav ul.active{
-    display:flex;
-}
-
-nav ul li{
-    margin:15px 0;
-}
-}
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
 @media (max-width:768px){
 
 nav{
-    flex-direction:column;
+    display:flex;
     padding:20px;
+    align-items: centre;
+    justify-content:space-between;
+    position: relative;
+
 }
 
 nav ul{
@@ -559,8 +520,8 @@ nav ul li{
 }
 /* Hamburger Menu */
 .menu-toggle{
-    display:none;
-    font-size:32px;
+    display:block;
+    font-size:30px;
     color:#ff5722;
     cursor:pointer;
 }
