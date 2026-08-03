@@ -285,6 +285,9 @@ nav ul li a:hover{
 .info-box{
     background:#1b1b1b;
     padding:30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
     border-radius:15px;
     transition:.3s;
 }
@@ -305,7 +308,9 @@ nav ul li a:hover{
 }
 
 .trial-btn{
-    display:inline-block;
+    display:block;
+    width:fit-content;
+    margin:40px auto 0;
     padding:18px 40px;
     background:#ff3c3c;
     color:white;
@@ -435,16 +440,10 @@ cursor:pointer;
 nav{
     display:flex;
     padding:20px;
-    align-items: centre;
+    align-items:center;
     justify-content:space-between;
     position: relative;
 
-}
-
-nav ul{
-    flex-direction:column;
-    align-items:center;
-    padding:0;
 }
 
 nav ul li{
@@ -527,7 +526,6 @@ nav ul li{
 }
 
 /* Mobile Responsive */
-@media (max-width:768px){
 
     nav{
         padding:20px;
@@ -535,8 +533,11 @@ nav ul li{
 
     .menu-toggle{
         display:block;
-    }
+        font-size:30px;
+        color: #ff5722;
+        cursor:pointer;
 
+    }
     nav ul{
         position:absolute;
         top:80px;
@@ -544,16 +545,94 @@ nav ul li{
         width:220px;
         background:#111;
         flex-direction:column;
-        display:flex;
+        display:none;
         padding:20px;
         border-radius:0 0 0 10px;
+        align-items:center;
     }
 
     nav ul.active{
-        display:flex;
+        display:flex;        
     }
 
     nav ul li{
         margin:15px 0;
     }
+    .gallery-page{
+    padding:120px 8%;
+    background:#111;
+    min-height:100vh;
+}
+
+.gallery-page h1{
+    text-align:center;
+    color:#ff5722;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #ff5722;
+}
+/* ===== LOCATION CARD ===== */
+
+.location-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:15px 0;
+    transition:0.4s ease;
+}
+
+.location-card:hover img{
+    transform:scale(1.05);
+}
+
+.location-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#ff5722;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.location-btn:hover{
+    background:#ff784e;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(255,87,34,.5);
+}
+.back-btn{
+    display:inline-block;
+    margin:20px;
+    padding:10px 20px;
+    background:#ff3c3c;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:#ff3c3c;
 }
