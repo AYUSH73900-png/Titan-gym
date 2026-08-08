@@ -42,13 +42,22 @@ button{
     font-size:20px;
     cursor:pointer;
     border-radius:8px;
+};
+html{
+    scroll-padding-top:90px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9999;
 }
 
 nav h2{
@@ -442,10 +451,17 @@ nav{
     padding:20px;
     align-items:center;
     justify-content:space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    box-sizing:border-box;
+    z-index: 9999;
 
 }
-
+body{
+    padding-top: 80px;
+}
 nav ul li{
     margin:12px 0;
 }
@@ -620,6 +636,10 @@ nav ul li{
     background:#ff784e;
     transform:translateY(-3px);
     box-shadow:0 0 20px rgba(255,87,34,.5);
+}
+.gallery-header{
+    padding-top:90px;
+    text-align:right;
 }
 .back-btn{
     display:inline-block;
